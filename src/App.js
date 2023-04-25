@@ -12,6 +12,7 @@ function App() {
 
   // Main function
   const runCoco = async () => {
+    tf.tensor([1, 2, 3, 4])
     const net = await cocossd.load();
     console.log("Handpose model loaded.");
     //  Loop and detect hands
@@ -49,6 +50,7 @@ function App() {
     }
   };
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => { runCoco() }, []);
 
   return (
