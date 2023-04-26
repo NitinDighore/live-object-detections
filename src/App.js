@@ -55,7 +55,7 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
+      <div className="App-header">
         <Webcam
           ref={webcamRef}
           muted={true}
@@ -67,8 +67,8 @@ function App() {
             right: 0,
             textAlign: "center",
             zindex: 9,
-            width: 640,
-            height: 480,
+            width: '100%',
+            height: 500,
           }}
         />
 
@@ -82,11 +82,11 @@ function App() {
             right: 0,
             textAlign: "center",
             zindex: 8,
-            width: 640,
-            height: 480,
+            width: '100%',
+            height: 500,
           }}
         />
-      </header>
+      </div>
     </div>
   );
 }
